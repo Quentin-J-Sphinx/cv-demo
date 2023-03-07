@@ -1,0 +1,48 @@
+.quoteBox{
+    display: flex;
+    flex-direction: column;
+    background-image: var(--gradient);
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border-radius: 3px;
+    padding: 2.5rem;
+    box-shadow: -5px 20px 50px 5px black;
+
+    &--title{
+        font-size: .8em;
+        color: var(--color-quote);
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &--quote{
+        font-family: 'Amita';
+        color: var(--color-quote);
+        font-size: 3.5em;
+    }
+
+    &--author{
+        color: var(--color-action);
+        align-self: flex-end;
+        margin-bottom: 3rem;
+    }
+
+    &--next{
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.137);
+        border-radius: 6px;
+        padding: 1rem;
+        position: fixed;
+        top: 65%;
+        left: 33%;
+        width: 50rem;
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.322);
+            color: white;
+        }
+    }
+}
+
